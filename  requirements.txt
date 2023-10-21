@@ -1,0 +1,4 @@
+emoji==2.8.0
+python-decouple==3.8
+termcolor==2.3.0
+
