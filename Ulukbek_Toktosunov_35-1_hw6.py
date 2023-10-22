@@ -1,15 +1,15 @@
 def bubble_sort(arr):
     n = len(arr)
     for i in range(n):
-        for j in range( n - i - 1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr  #возвр отсортированный список
 
 # Пример использования:
-my_list = [61, 25, 132, 122, 101]
-bubble_sort(my_list)
-print("Отсортированный список:", my_list)
-
+my_list = [64, 245, 12, 222, 13]
+sorted_list = bubble_sort(my_list)
+print("Отсортированный список:", sorted_list)
 
 
 def binary_search(a,value):
@@ -31,6 +31,8 @@ def binary_search(a,value):
 my_list = [1, 3, 5, 7, 9, 11, 13, 15, 17]
 target = 15
 binary_search(my_list, target)
+
+
 
 
 
